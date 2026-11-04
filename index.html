@@ -407,7 +407,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <!-- RSVP / Message Form -->
         <div style="text-align: center; padding: 10px 0;">
@@ -442,21 +442,6 @@
                 musicToggle.style.background = "var(--accent-light)";
             }
             isPlaying = !isPlaying;
-        });
-
-        /* DELETE OR REMOVE THIS SCRIPT BLOCK */
-        const lightCandleBtn = document.getElementById('lightCandleBtn');
-        const candleCountSpan = document.getElementById('candleCount');
-        let lit = false;
-
-        lightCandleBtn.addEventListener('click', () => {
-            if (!lit) {
-                let currentCount = parseInt(candleCountSpan.textContent);
-                candleCountSpan.textContent = currentCount + 1;
-                lightCandleBtn.textContent = "Candle Lit. Thank You.";
-                lightCandleBtn.style.background = "#666";
-                lit = true;
-            }
         });
 
         /* RSVP Form Submission simulation */
