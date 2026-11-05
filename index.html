@@ -356,9 +356,9 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <div class="memorial-tag"> For Batch 1981 to 1987 of UPIS </div>
-            <h1>JOSE JUDE "JOJO' 'JOYAP" A. YAPIT</h1>
-            <p class="dates"> November 18, 2026 | (Time) &bull; Oblation lounge, University Hotel </p>
+            <div class="memorial-tag"> Maroon 39, Eagle 17, Jojo, Joyap </div>
+            <h1>JOSE JUDE "Papa J" A. YAPIT</h1>
+            <p class="dates"> November 18, 2026 | 03:30 PM&bull; Oblation lounge, University Hotel </p>
         </header>
 
         <!-- Portrait Image -->
@@ -379,8 +379,8 @@
 
         <!-- Verse / Tribute Note -->
         <div class="verse-card">
-            <p>"Those we love don't go away, they walk beside us every day. Unseen, unheard, but always near, still loved, still missed and very dear."</p>
-            <div class="verse-ref">Celebrating the 40th Day</div>
+            <p>"The song is ended, but the melody lingers in our hearts" - Irving Berlin</p>
+            <div class="verse-ref">Remembering Maroon 39, Eagle 17, Jojo, Joyap, JOSE JUDE "Papa J" A. YAPIT</div>
         </div>
 
         <!-- Schedule Section -->
@@ -391,8 +391,8 @@
                 <div class="event-icon"><i class="fa-solid fa-church"></i></div>
                 <div class="event-details">
                     <h3>Memorial Mass & Novena</h3>
-                    <p><strong>Date:</strong> Saturday, November 21, 2026<br><strong>Time:</strong> 2:00 PM<br>St. Jude Parish Church, City Name</p>
-                    <a href="https://maps.google.com" target="_blank" class="map-btn"><i class="fa-solid fa-location-dot"></i> Open in Google Maps</a>
+                    <p><strong>Date:</strong> Wednesday, November 18, 2026<br><strong>Time:</strong> 04:00 PM <br>Parish of the Holy Sacrifice (Diocese of Cubao)</p>
+                    <a href="https://www.google.com/maps/place/Parish+of+the+Holy+Sacrifice+(Diocese+of+Cubao)/@14.6589413,121.0711753,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b76777322437:0xcc819d685de2f13b!8m2!3d14.6589413!4d121.0711753!16s%2Fm%2F02q9jtk?hl=en&entry=ttu&g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn"><i class="fa-solid fa-location-dot"></i> Open in Google Maps</a>
                 </div>
             </div>
 
@@ -402,20 +402,12 @@
                 <div class="event-icon"><i class="fa-solid fa-utensils"></i></div>
                 <div class="event-details">
                     <h3>Reception & Fellowship</h3>
-                    <p><strong>Time:</strong> Immediately following the Mass<br>Social Hall, St. Jude Parish Compound</p>
-                    <a href="https://maps.google.com" target="_blank" class="map-btn"><i class="fa-solid fa-location-dot"></i> Open in Google Maps</a>
+                    <p><strong>Time:</strong> 05:00 PM to 09:00 PM<br> University Hotel, Oblation Lounge</p>
+                    <a href="https://www.google.com/maps/place/University+Hotel/@14.6611171,121.0702023,17z/data=!3m1!4b1!4m9!3m8!1s0x3397b75ddacc0e03:0xf29161c268d1d08e!5m2!4m1!1i2!8m2!3d14.6611171!4d121.0727772!16s%2Fg%2F1v2gb8mz?entry=ttu&g_ep=EgoyMDI2MTAyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn"><i class="fa-solid fa-location-dot"></i> Open in Google Maps</a>
                 </div>
             </div>
         </div>
 
-        <!-- Virtual Candle Lighting -->
-        <div class="candle-section">
-            <div class="candle-icon"><i class="fa-solid fa-candle-holder"></i></div>
-            <h3 style="font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 8px;">Light a Virtual Candle</h3>
-            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">Join family and friends in offering a quiet prayer.</p>
-            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent);"><span id="candleCount">48</span> candles lit</p>
-            <button class="candle-btn" id="lightCandleBtn">Light a Candle</button>
-        </div>
 
         <!-- RSVP / Message Form -->
         <div style="text-align: center; padding: 10px 0;">
@@ -450,21 +442,6 @@
                 musicToggle.style.background = "var(--accent-light)";
             }
             isPlaying = !isPlaying;
-        });
-
-        /* Virtual Candle Counter */
-        const lightCandleBtn = document.getElementById('lightCandleBtn');
-        const candleCountSpan = document.getElementById('candleCount');
-        let lit = false;
-
-        lightCandleBtn.addEventListener('click', () => {
-            if (!lit) {
-                let currentCount = parseInt(candleCountSpan.textContent);
-                candleCountSpan.textContent = currentCount + 1;
-                lightCandleBtn.textContent = "Candle Lit. Thank You.";
-                lightCandleBtn.style.background = "#666";
-                lit = true;
-            }
         });
 
         /* RSVP Form Submission simulation */
